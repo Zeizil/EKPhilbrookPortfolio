@@ -1,19 +1,11 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Elizabeth Philbrook - Portfolio</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" type="text/css" href="./assets/reset.css" />
-        <link rel="stylesheet" type="text/css" href="./assets/style.css" />
-        
-    </head>
-    <body>
-        <!-- Header -->
+import React, { useState } from 'react';
+
+function Body() {
+    return (
+        <div>
         <header>
-            <h1><img id="flowers" src="./assets/Images/IMG_3948.PNG" alt="cartoon skeleton with a pumpkin for a head" />Elizabeth Philbrook</h1>
+            <h1><img id="flowers" src="./public/Images/IMG_3948.PNG" alt="cartoon skeleton with a pumpkin for a head" />Elizabeth Philbrook</h1>
         </header>
-        <!-- Navbar -->
         <nav>
             <h2><a href="#description">About Me</a></h2>
             <h2><a href="#projects">Work</a></h2>
@@ -21,20 +13,18 @@
             <h2><a href="#resumedownload">Resume</a></h2>
         </nav>
         
-        <img src="./assets/Images/adi-goldstein-EUsVwEOsblE-unsplash.jpg" alt="lit up circuit board" id="circuits" />
+        <img src="./public/Images/adi-goldstein-EUsVwEOsblE-unsplash.jpg" alt="lit up circuit board" id="circuits" />
 
-        <!-- Main Body -->
         <main>
-            <!-- Sidebar -->
             <aside>
                 <h2 id="about">About Me</h2>
                 <h2 id="work">Work</h2>
                 <h2 id="contact">Contact</h2>
                 <h2 id="resume">Resume</h2>
             </aside>
-            <!-- Content -->
+
             <div>
-                <!-- About Me -->
+
                 <section id="description">
                     <p>Elizabeth is a hardworking early career professional looking to work in software engineering, 
                         changing how the world does business. She exhibits strong technical skills and in-depth knowledge 
@@ -42,25 +32,25 @@
                         communication skills. Additionally, she has teamwork experience and well-developed independent time 
                         management and problem-solving skills.</p>
                 </section>
-                <!-- Work -->
+
                 <section id="projects">
-                    <!-- Boxes for each work -->
+
                     <div class="worklinks">
                         <h3 id="firsttitle">Book Reviews Website</h3>
-                        <a href="https://github.com/Zeizil/PersonalLibraryRepo"><img src="./assets/Images/pankaj-patel-6JVlSdgMacE-unsplash.jpg" alt="part of css code" id="firstimg" /></a>
+                        <a href="https://github.com/Zeizil/PersonalLibraryRepo"><img src="./public/Images/pankaj-patel-6JVlSdgMacE-unsplash.jpg" alt="part of css code" id="firstimg" /></a>
                     </div>
                     <div class="worklinks">
                         <h3 id="firsttitle">Thanksgiving Meal Planner</h3>
-                        <a href="https://github.com/average-android/CookingRepo"><img src="./assets/Images/Screenshot_20221114_091208.png" alt="Thanksgiving turkey from Norman Rockwell painting" id="workimg" /></a>
+                        <a href="https://github.com/average-android/CookingRepo"><img src="./public/Images/Screenshot_20221114_091208.png" alt="Thanksgiving turkey from Norman Rockwell painting" id="workimg" /></a>
                     </div>
                     <div class="worklinks">
                         <h3 id="firsttitle">Quake Friends</h3>
-                        <a href="https://earthquake-track.herokuapp.com/"><img src="./assets/Images/830758-best-earthquake-wallpapers-2880x1800.jpg" alt="Thanksgiving turkey from Norman Rockwell painting" id="workimg" /></a>
+                        <a href="https://earthquake-track.herokuapp.com/"><img src="./public/Images/830758-best-earthquake-wallpapers-2880x1800.jpg" alt="Thanksgiving turkey from Norman Rockwell painting" id="workimg" /></a>
                     </div>
                 </section>
-                <!-- Contact -->
+
                 <section id="contactlinks">
-                    <!-- Phone number, email, GitHub. LinkedIn (I don't have Twitter) -->
+                
                     <ul>
                         <li>Phone: (603) 944-7306</li>
                         <li>Email: <a href="mailto: ekphilbrook@gmail.com">ekphilbrook@gmail.com</a></li>
@@ -68,12 +58,15 @@
                         <li>LinkedIn: <a href="https://www.linkedin.com/in/elizabeth-philbrook/">Profile</a></li>
                     </ul>
                 </section>
-                <!-- Resume -->
+  
                 <section id="resumedownload">
-                    <!-- link downloadable pdf of most up-to-date resume -->
-                    <h3><a href="./assets/Resume_ElizabethKPhilbrook.pdf" download="EKPhilbrookResume">Download Resume</a></h3>
+     
+                    <h3><a href="./public/Resume_ElizabethKPhilbrook.pdf" download="EKPhilbrookResume">Download Resume</a></h3>
                 </section>
             </div>
         </main>
-    </body>
-</html>
+    </div>
+    )
+}
+
+export default Body;
