@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Colors used for theme */
+:root{
+    --gray: #787f82;
+    --white: #fff;
+    --purple: rgb(112, 44, 201);
+  }
+
+  html {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  /* Body */
+  body {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    min-width: 100vh;
+    justify-content: flex-start;
+    background-color: var(--gray);
+  }
+
+  /* Header */
+  header {
+    padding: 10px;
+    text-align: left;
+    background: var(--gray);
+  }
+
+  /* Nav section */
+  nav{
+    display: flex;
+  }
+
+  nav a{
+    color: var(--white);
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+
+/* Main */
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    background-image: linear-gradient(var(--gray), lightgray);
+    width: 100%;
+    position: relative;
+  }
+  
+  /* Text styles */
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    color: var(--purple);
+  }
+
+  h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--white);
+  }
+
+  h3 a{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: var(--purple);
+  }
+
+  p{
+    font-size: 18px;
+    margin: 20px;
+    color: var(--white);
+  }
+  
+  /* Content */
+  aside{
+    flex: .2;
+    background-color: var(--purple);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+  }
+  
+  aside h2{
+    margin-top: 10%;
+    text-align: center;
+  }
+
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 85%;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 20px;
+    flex: 1 1 auto;
+  }
+  
+  /* List formatting */
+  ul {
+    display: flex;
+    color: var(--white);
+    padding: 14px 20px;
+    text-align: center;
+  }
+
+  ul a{
+    text-decoration: none;
+    color: var(--purple);
+  }
+
+  li{
+    font-size: 1.5rem;
+    margin-right: 2rem;
+  }
+
+  /* IDs */
+
+  /* Aside Labels */
+  #about {
+    margin-bottom: 100%;
+  }
+
+  #work {
+    margin-bottom: 350%;
+  }
+
+  #contact {
+    margin-bottom: 100%;
+  }
+
+  #resume {
+    margin-bottom: 100%;
+  }
+
+  /* Content */
+  #description {
+    width: 100%;
+    margin-top: .1%;
+    margin-bottom: 5%;
+    padding-left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* Avatar profile picture */
+  #flowers {
+    max-height: 100px;
+    max-width: 100px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+
+  #projects {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #contactlinks {
+    width: 100%;
+    padding-left: 10%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #resumedownload {
+    width: 100%;
+    padding-left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #circuits {
+    border: 1px solid var(--purple);
+    border-width: 4px;
+    border-radius: 4px;
+    height: auto;
+    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+
+  /* Classes and associated IDs */
+  .worklinks{
+    display: flex;
+    position: relative;
+    flex: 4;
+    padding: 50px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* align-items: baseline; */
+    padding: 10px;
+    margin: 10px;
+    flex: 0 0 300px;
+  }
+
+  #firstimg {
+    border: 1px solid var(--purple);
+    border-radius: 4px;
+    padding: 5px;
+    max-height: 200px;
+    max-width: 400px;
+    position: relative;
+  }
+
+  #firsttitle {
+    position: absolute;
+    color: var(--purple);
+    background-color: var(--white);
+    padding: 5px;
+    bottom: 20%;
+    right: 16px;
+  }
+
+  #workimg {
+    border: 1px solid var(--purple);
+    border-radius: 4px;
+    padding: 5px;
+    max-height: 200px;
+    max-width: 400px;
+    position: relative;
+  }
+
+  #worktitle {
+    position: absolute;
+    color: var(--purple);
+    background-color: var(--white);
+    padding: 5px;
+    bottom: 25%;
+    right: 16px;
+  }
+  
+/* Responsive */
+  @media screen and (max-width: 992px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+    aside {
+        flex-direction: row;
+    }
+    #about, #work, #contact, #resume {
+        margin-bottom: 10%;
+        margin-right: 10%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+}
