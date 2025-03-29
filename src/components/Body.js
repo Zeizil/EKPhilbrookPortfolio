@@ -61,7 +61,7 @@ function Body() {
   
                 <section id="resumedownload">
      
-                    <h3><a href="./public/Resume_ElizabethKPhilbrook.pdf" download="EKPhilbrookResume">Download Resume</a></h3>
+                    <h3><a href="./public/Elizabeth_Philbrook_Resume.pdf" download="Elizabeth_Philbrook_Resume">Download Resume</a></h3>
                 </section>
             </div>
         </main>
